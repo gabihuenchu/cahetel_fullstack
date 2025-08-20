@@ -1,0 +1,145 @@
+/* styles.css */
+
+/* Tipografías Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500&display=swap');
+
+:root {
+  --color-principal: #000;   /* negro editorial */
+  --color-secundario: #fff; /* blanco */
+  --color-acento: #c69;     /* un rosa/magenta suave opcional */
+  --fuente-titulos: 'Playfair Display', serif;
+  --fuente-texto: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fuente-texto);
+  background: var(--color-secundario);
+  color: var(--color-principal);
+  line-height: 1.7;
+}
+/* Logo en el header */
+.logo img {
+  height: 60px;   /* ajusta el tamaño según tu diseño */
+  width: auto;    /* mantiene la proporción */
+  display: block;
+  align-items: left;
+}
+
+/* Header */
+header {
+  background: var(--color-secundario);
+  color: var(--color-principal);
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--color-principal);
+}
+
+header h1 {
+  font-family: var(--fuente-titulos);
+  font-size: 2.2rem;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color-principal);
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--color-acento);
+}
+
+/* Hero */
+.hero {
+  padding: 0; /* eliminamos el relleno porque ahora es solo la imagen */
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+.hero h2, .hero p {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-family: var(--fuente-titulos);
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Secciones */
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-family: var(--fuente-titulos);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--color-principal);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+article {
+  margin-bottom: 2.5rem;
+}
+
+article h3 {
+  font-family: var(--fuente-titulos);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+article p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background: var(--color-principal);
+  color: var(--color-secundario);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer a {
+  color: var(--color-secundario);
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  color: var(--color-acento);
+}
